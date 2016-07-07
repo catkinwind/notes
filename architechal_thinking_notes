@@ -1,0 +1,24 @@
+SOA design pattern
+
+Conceptial, specification, design.
+
+excercises:
+1. tiers
+2. order center / product center / customer management
+3. cumstomer + service background management
+4. product info pushing
+5. offline data / cache management
+6. synchronizations between multiple channels
+7. product center should manage the version of products.
+8. product categories.
+9. let customers know the price changed or tell them this is a price based on some day.
+
+
+1. do they have existing services?  such as products?
+2. trailors
+3. none food products / food products how to management, separated?
+4. self provided products? provide system for 3rd party? no
+5. reliable. 
+6. Could customers edit his order?
+7. separate of concerns
+

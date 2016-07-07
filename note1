@@ -1,0 +1,47 @@
+1. list users 
+  awk -F: '$0=$1 " uid="$3' /etc/passwd
+
+2. execute rspec
+  bundle exec rspec spec/models/lxc_hypervisor_spec.rb
+
+3. fetch a remote branch
+
+git fetch
+git checkout [branch name]
+
+4. rename a branch
+
+  "git branch -m <new_name>" to rename current branch.
+  "git branch -m <old_name> <new_name>" to rename a branch.
+
+5. http://stackoverflow.com/questions/6006737/git-merge-errors 
+
+  it's worth understanding what those error messages mean - needs merge and error: you need to resolve your current index first indicate that a merge failed, and that there are conflicts in those files. If you've decided that whatever merge you were trying to do was a bad idea after all, you can put things back to normal with:
+
+  git reset --merge
+
+6. execute cucumber: cucumber features/shutdown_server.feature -p dev
+
+
+7. remove a remote branch
+    git push origin :[branch_name]
+    git push origin --delete [branch_name]
+
+
+8. set transaction timeout for Websphere Liberty.
+    <transaction propogatedOrBMTTranLifetimeTimeout="7200" totalTranLifetimeTimeout="7200" />
+  
+9. remove a log in github project.
+
+  git reset --hard 0a5fbaf78aef4228
+  git push -f origin master
+
+10. how to add another ssh key to git.
+
+    if you are using git bash
+    eval "$(ssh-agent -s)"
+    ssh-add [key]
+
+    in other terminals,
+
+    eval $(ssh-agent -s)
