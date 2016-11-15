@@ -60,4 +60,5 @@ git checkout [branch name]
 
     git show HEAD~1 will show change of current branch for 1th commits.
 
+14. bg will send the job to background. fg will bring it to front end.
 
