@@ -15,3 +15,7 @@ In C and C++, the volatile keyword was intended to allow C and C++ programs to d
 The C and C++ standards prior to C!! and C++11 do not address multiple threads (or multiple processors), and as such, the usefulness of volatile depends on the compilter and hardware. Although volatile guarantees that the volatile read and write is reordered with regard to non-volatile reads or writes, thus limiting its usefulness as an inter-thread flag or mutex. Preventing such is compiler specific, but some compilers, like gcc, will not reorder operations around in-line assembly code with volatile and "memory" tags, like in: asm volatile ("" : : : "memory"). Moreover, it is not guaranteed that volatile reads and writes will be seen in the same order by other processors or cores due to chaching. cache coherence protocol and relaxed memory ordering, meaning volatile varibles alone may not even work as inter-thread flags or mutexes.
 
 In Java version 1.5, the volatile keyword is now guaranteed to prevent certail hardware and compliler reorderings, as part of the new Java Memory Model.
+
+References:
+https://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt
+https://en.wikipedia.org/wiki/Memory_barrier#frbanner3
