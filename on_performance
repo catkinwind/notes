@@ -1,0 +1,10 @@
+1. First run the code and measure the performance.
+2. Steps for optimization:
+  a) A profiler that can analyze how much time a program spends in various parts.
+  b) To give the profiler something to chew on, perform some kind of automated run that reasonably simulates the program under its usual conditions. Don't simulate a multiuser system with singleuser.
+
+  c) Above is to find the bottleneck, after that, speed up the slow part or do the slow part less.
+    Keep the design of system cohesive, loosely coupled, will help to narrow down the bottleneck.
+
+  d) Measure you performance increase after optimization.
+
