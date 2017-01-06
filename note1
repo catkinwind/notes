@@ -62,3 +62,5 @@ git checkout [branch name]
 
 14. bg will send the job to background. fg will bring it to front end.
 
+15. how to display file name in vim: ctrl + g
+
