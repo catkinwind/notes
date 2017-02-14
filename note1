@@ -69,3 +69,12 @@ git checkout [branch name]
 17. attach a local git repo to remote one: git push --mirror git@repo.
 
 18. rename file in some pattern: for f in d0*.c; do mv "$f" "d1${f#d0}"; done
+
+19. how to make a "find in files" script:
+
+#!/bin/bash
+
+find . -type f -iname "$1" | xargs grep "$2"
+
+then we could use fif.sh '*.rb' 'something to search' to search in files match the pattern.
+
