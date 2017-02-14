@@ -62,8 +62,10 @@ git checkout [branch name]
 
 14. bg will send the job to background. fg will bring it to front end.
 
-15. how to display file name in vim: control + g
+15. how to display file name in vim: ctrl g
 
 16. how to bulk rename files in some pattern: for f in d*.c; do mv "$f" "d11${f#d0}"; done
 
 17. attach a local git repo to remote one: git push --mirror git@repo.
+
+18. rename file in some pattern: for f in d0*.c; do mv "$f" "d1${f#d0}"; done
