@@ -78,3 +78,10 @@ find . -type f -iname "$1" | xargs grep "$2"
 
 then we could use fif.sh '*.rb' 'something to search' to search in files match the pattern.
 
+20. zsh is slow in git repo directories.
+    git config --add oh-my-zsh.hide-status 1
+    git config --add oh-my-zsh.hide-dirty 1
+    Detailed Answer: There are two central git functions (git_prompt_info() and parse_git_dirty()) in lib/git.zsh. Each Method has a git config switch to disable it (oh-my-zsh.hide-status and oh-my-zsh.hide-dirty)
+
+    from http://stackoverflow.com/questions/12765344/oh-my-zsh-slow-but-only-for-certain-git-repo
+
