@@ -85,5 +85,6 @@ The value of the make variable VPATH specifies a list directories that make shou
 VPATH = src:../headers
 specifies a path containing two directories, src and ../headers, which make searches in that *order*.
 
-* TODO
-what's ``$@''
+* $@ and $<
+
+$@ are the dependencies, $< is the target.
