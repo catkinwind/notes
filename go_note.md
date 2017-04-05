@@ -1,5 +1,5 @@
 * An untyped constant takes the type needed by its context.
-```python
+```go
 package main
 
 import "fmt"
