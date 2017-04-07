@@ -93,6 +93,8 @@ Every thread has a thread ID which is represented by pthread\_t data type.
 
 The thread creation need to call to the kernel, so it could be expensive compared to function calls.
 
-To synchronize threads, we could use mutex or reader-writer locks. There is no semaphors in ISO C,
-but we could simulate in with mutex and locks.
+To synchronize threads, we could use mutex or reader-writer locks.
+We could simulate counting semaphores with mutex and conditional variables. Check this
+[page](http://www.cs.wustl.edu/~schmidt/win32-cv-1.html)
+
 
