@@ -1,5 +1,6 @@
 # Elliptic Curve Digital Signature Algorithm
-check: https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm
+check [wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm)
+
 ## Signature generate algorithm
 Suppose Alice want to send a signed message to Bob. Initially, they must agree on the curve parameters (CURVE, G, n).
 - CURVE: the elliptic curve field and equation used
