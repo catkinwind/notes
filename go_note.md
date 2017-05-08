@@ -259,3 +259,5 @@ var fetcher = fakeFetcher{
   },
 }
 
+* xml serialization
+encode/xml. First new encoder, then set indent.One thing need to note is the private fields will not be marshalled.
