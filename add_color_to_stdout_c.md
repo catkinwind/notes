@@ -1,3 +1,6 @@
+# To set stdout color in linux shell.
+
+```C
 #include <stdio.h>
 
 #define ANSI_COLOR_RED     "\x1b[31m"
@@ -19,5 +22,9 @@ int main (int argc, char const *argv[]) {
 
   return 0;
 }
+```
 
-// note that the string could be split to pecise in printf without comma.
+// note that the string could be split to pieces in printf without comma.
+
+Actually, "\x1b[" (ESC + [) is escape sequences in VT100, most terminals supports
+these.
