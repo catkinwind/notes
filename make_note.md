@@ -1,4 +1,4 @@
-* Variables make Makefiles simpler
+# Variables make Makefiles simpler
 
 This is an example of using variables.
 
@@ -78,13 +78,13 @@ display.o insert.o search.o files.o : buffer.h
 "Whether this is better is a matter of taste; it is more compact, but some people dislike it because they find it clear to put all the information about each target in one place.
 
 
-* Directory Search
+# Directory Search
 
 The value of the make variable VPATH specifies a list directories that make should search. the directories are expected to contain prerequisite files that are not in the current directory; however, make uses VPATH as a search list for both prerequisites and targets of rules.
 
 VPATH = src:../headers
 specifies a path containing two directories, src and ../headers, which make searches in that *order*.
 
-* $@ and $<
+# $@ and $<
 
-$@ are the dependencies, $< is the target.
+$@ is the dependencies, $< is the target.

@@ -2,7 +2,7 @@
   awk -F: '$0=$1 " uid="$3' /etc/passwd
 
 2. execute rspec
-  bundle exec rspec spec/models/lxc_hypervisor_spec.rb
+  bundle exec rspec spec/models/lxc\_hypervisor\_spec.rb
 
 3. fetch a remote branch
 
@@ -20,7 +20,7 @@ git checkout [branch name]
 
   git reset --merge
 
-6. execute cucumber: cucumber features/shutdown_server.feature -p dev
+6. execute cucumber: cucumber features/shutdown\_server.feature -p dev
 
 
 7. remove a remote branch
@@ -64,11 +64,11 @@ git checkout [branch name]
 
 15. how to display file name in vim: ctrl g
 
-16. how to bulk rename files in some pattern: for f in d*.c; do mv "$f" "d11${f#d0}"; done
+16. how to bulk rename files in some pattern: for f in d\*.c; do mv "$f" "d11${f#d0}"; done
 
 17. attach a local git repo to remote one: git push --mirror git@repo.
 
-18. rename file in some pattern: for f in d0*.c; do mv "$f" "d1${f#d0}"; done
+18. rename file in some pattern: for f in d0\*.c; do mv "$f" "d1${f#d0}"; done
 
 19. how to make a "find in files" script:
 
@@ -76,7 +76,7 @@ git checkout [branch name]
 
 find . -type f -iname "$1" | xargs grep "$2"
 
-then we could use fif.sh '*.rb' 'something to search' to search in files match the pattern.
+then we could use fif.sh '\*.rb' 'something to search' to search in files match the pattern.
 
 20. zsh is slow in git repo directories.
     git config --add oh-my-zsh.hide-status 1

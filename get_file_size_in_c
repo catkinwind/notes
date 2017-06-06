@@ -1,5 +1,0 @@
-fseek(fd, 0L, SEEK_END);
-size_t sz = ftell(fd);
-fseek(fd, 0L, SEEK_SET);
-
-// there are also some api provide by OS.
