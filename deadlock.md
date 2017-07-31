@@ -1,6 +1,8 @@
-How to detect deadlock?
+# How to detect deadlock?
+
 You can do this programmatically using the ThreadMXBean that ships with JDK.
 
+```java
 ThreadMXBean bean = ManagementFactory.getThreadMXBean();
 long[] threadIds = bean.findDeadlockedThreads(); // Returns null if no threads are deadlocked.
 
@@ -12,6 +14,7 @@ if (threadIds != null) {
     // Log or store stack trace information.
   }
 }
+```
 
 Obviously you should try to isolate whichever thread is performing this deadlock check - Otherwise if that thread deadlocks it won't be about to run the check!
 

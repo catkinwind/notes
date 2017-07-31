@@ -1,4 +1,4 @@
-1. load test terms: What are Transactions, request, TPS,throughput?
+1. load test terms: What are Transactions, request, TPS, throughput?
   In some cases transaction can stand for a single request but more often it is a series of requests representing a piece of business logic like:
 
   User opens a site

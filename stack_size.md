@@ -6,5 +6,6 @@ Usually it's a multiple of 1MB for both Windows and Linux.
 For thread on Linux / x86-32, the default size of stack is 2MB. For IA64 platform, it's maybe 8MB.
 
 ulimit -S will return Linux's setting.
-int pthread_attr_setstacksize(pthread_attr_t *attr, size_t stacksize);
+int pthread\_attr\_setstacksize(pthread\_attr\_t \*attr, size_t stacksize);
+
 could set the stack size for a thread.
